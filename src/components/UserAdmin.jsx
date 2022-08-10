@@ -99,8 +99,8 @@ const UserAdmin = ({ref_links, set_ref_links}) => {
             <button type="button" onClick={generate_link}>Сгенерировать ссылку</button>
             {ref_links.map((el, i) => {
                 return (
-                    <div className='link'>
-                        <Link key={i} to={el} style={{display: "block"}} target="_blank">{el}</Link>
+                    <div key={i} className='link'>
+                        <Link to={el} style={{display: "block"}} target="_blank">{el}</Link>
                     </div>
                 )
             })}
